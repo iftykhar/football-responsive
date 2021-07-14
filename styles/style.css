@@ -26,16 +26,19 @@ body {
 
 .button {
     background-color: #E02C6D;
-    width: 155px;
-    height: 30px;
-    align-items: center;
+    width: 168px;
+    padding: 10px;
+    /* height: 30px;
+    align-items: center; */
     text-align: center;
+    color: white;
 }
 
 .top-banner img {
     width: 556.01px;
     height: 438px;
-    margin-right: 140px;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
 
@@ -50,24 +53,79 @@ body {
 .player-profiles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 24px;
+    grid-column-gap: 27px;
+    grid-row-gap: 30px;
+    /* position: relative; */
+    margin-bottom: 30px;
 }
 
 .profiles {
-    box-shadow: 8px 5px 5px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 8px 5px 5px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
     padding: 15px;
-    margin-left: 30px;
-    margin-bottom: 27px;
+    /* margin-left: 30px;
+    margin-bottom: 27px; */
+}
+
+.profile-image {
+    overflow: hidden;
 }
 
 .profile-image img {
     width: 300px;
     height: 256px;
+    transition: transform 3s ease-in;
+}
+
+.profile-image img:hover {
+    transform: scale(1.5);
 }
 
 .profile-details {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 16px;
 }
+
+
+/* footer stlye */
+
+.footer {
+    justify-content: center;
+    align-items: center;
+    margin-left: 420px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    /* margin-right: 481px; */
+}
+
+.footer img {
+    width: 483px;
+    height: 110px;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.social {
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.copyright {
+    text-align: center;
+    width: 460px;
+}
+
+
+/* Media query */
+
+@media only screen and (max-width:688px) {}
