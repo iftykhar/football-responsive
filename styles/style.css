@@ -87,7 +87,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
     margin-top: 16px;
 }
 
